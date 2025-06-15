@@ -1,6 +1,6 @@
 // import React { useState }from 'react';
 import './App.css';
-import profilePic from './assets/profile_pic.jpg';
+import profilePic from './assets/profile_pic.png';
 // import Navbar from './components/Navbar';
 
 
