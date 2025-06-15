@@ -1,5 +1,6 @@
 // import React { useState }from 'react';
 import './App.css';
+import profilePic from './assets/profile_pic.jpg';
 // import Navbar from './components/Navbar';
 
 
@@ -19,7 +20,8 @@ function App() {
          <h2>passionate about digital literacy {'&'} accessibility.</h2>
        </div>
        <div className='header-pic'>
-         <img src="/profile_pic.JPG" alt="Profile Picture"/>
+         {/* <img src="./assets/profile_pic.jpg" alt="Profile Picture"/> */}
+         <img src={profilePic}/>
        </div>
       
       
