@@ -1,21 +1,19 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom'
-// import "./navbar.css"
 
-// const WebsiteNavbar = () => {
-//     return (
-//         <nav>
-//             <div className= 'navbar-logo'>
+import { Link } from 'react-router-dom'
+import "./navbar.css"
 
-//             </div>
-//             <div>
-//                 <Link to="">About</Link>
-//                 <Link to="">Projects</Link>
-//                 <Link to="">Experience</Link>
-//                 <Link to="">Education</Link>
-//                 <Link to="">Contact</Link>
+function WebsiteNavbar() {
+    return (
+        <nav>
+            <div className= 'navbar'>
+                <Link to="/">Home</Link>
+                <Link to="/projects">Projects</Link>
+                <Link to="/experience">Experience</Link>
+                <Link to="/education">Education</Link>
+                <Link to="/contact">Contact</Link>
+            </div>
+        </nav>
+    )
+}
 
-//             </div>
-//         </nav>
-//     )
-// }
+export default WebsiteNavbar;
