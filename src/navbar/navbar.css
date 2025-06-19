@@ -153,7 +153,33 @@
   }
 }
 
-.navbar a:active {
-  color: #a0522d;
+/* Styles for all NavLink links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0 10px;
+  height: 100%;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  cursor: pointer;
+  color: #d4b4a8;
+}
+
+/* Active link style */
+.nav-link.active {
+  color:#d4b4a8;
+  font-weight: bold;
+  border-bottom: 2px solid #d4b4a8;
+  /* border: 1px solid #333;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #d4b4a8; */
 }
 

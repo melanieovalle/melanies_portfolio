@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./navbar.css";
 import icon from '../assets/icon.png';
 
@@ -13,18 +13,42 @@ function WebsiteNavbar() {
     return (
         <nav className= 'navbar'>
             <div className= 'navbar-logo'>
-                <Link to="/">
+                <NavLink to="/">
                     <img src={icon} alt="Website Icon" style={{ cursor: 'pointer' }} />
-                </Link>
+                </NavLink>
             </div>
 
             <div className={`navbar-links ${navToggle ? 'active' : ''}`}>
-                    <Link to="/" onClick={() => setNavToggle(false)}>Home</Link>
-                    <Link to="/projects" onClick={() => setNavToggle(false)}>Projects</Link>
-                    <Link to="/experience" onClick={() => setNavToggle(false)}>Experience</Link>
-                    <Link to="/education" onClick={() => setNavToggle(false)}>Education</Link>
-                    <Link to="/blog" onClick={() => setNavToggle(false)}>Blog</Link>
-                    <Link to="/contact" onClick={() => setNavToggle(false)}>Contact</Link>
+                    <NavLink to="/" 
+                    onClick={() => setNavToggle(false)}
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                        Home
+                    </NavLink>
+                    <NavLink to="/projects" 
+                    onClick={() => setNavToggle(false)}
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                        Projects
+                    </NavLink>
+                    <NavLink to="/experience" 
+                    onClick={() => setNavToggle(false)}
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                        Experience
+                    </NavLink>
+                    <NavLink to="/education" 
+                    onClick={() => setNavToggle(false)}
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                        Education
+                    </NavLink>
+                    <NavLink to="/blog" 
+                    onClick={() => setNavToggle(false)}
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                        Blog
+                    </NavLink>
+                    <NavLink to="/contact" 
+                    onClick={() => setNavToggle(false)}
+                    className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                        Contact
+                    </NavLink>
                 </div>
 
             {/* <div className={`navbar-contact ${navToggle ? 'active' : ''}`}>
