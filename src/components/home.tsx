@@ -6,7 +6,7 @@ function DisplayHome() {
             <header className="header">
                 <div className='header-text'>
                     <h1>Hello, world!</h1>
-                    <h1>I'm Melanie {'<3'}</h1>
+                    <h1>I&apos;m Melanie {'<3'}</h1>
                     <h2>passionate about digital literacy {'&'} accessibility.</h2>
                 </div>
                 <div className='header-pic'>
@@ -22,7 +22,7 @@ function DisplayHome() {
                     
                     <div className="large-box">
                         <p>
-                            🇬🇹 : Im an international student from Guatemala,
+                            🇬🇹 : I&apos;m an international student from Guatemala,
                             currently pursuing a double major in Computer
                             Science and Math at Bowdoin College.
                         </p>
