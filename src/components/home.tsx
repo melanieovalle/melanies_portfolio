@@ -5,12 +5,12 @@ function DisplayHome() {
         <div className='page-wrapper'>
             <header className="header">
                 <div className='header-text'>
-                    <h1>Hello, world! I'm Melanie {'<3'}</h1>
+                    <h1>Hello, world!</h1>
+                    <h1>I'm Melanie {'<3'}</h1>
                     <h2>passionate about digital literacy {'&'} accessibility.</h2>
                 </div>
                 <div className='header-pic'>
-                    {/* <img src="./assets/profile_pic.jpg" alt="Profile Picture"/> */}
-                    <img src={profilePic}/>
+                    <img src={profilePic} alt="Profile Picture"/>
                 </div>
             </header>
 
@@ -34,9 +34,9 @@ function DisplayHome() {
                         </p>
                         <br></br>
                         <p>
-                            💻 : Fluent in Python, Java, HTML, JavaScript, CSS, and TypeScript.
+                            💻 : Proficient in Python, Java, JavaScript, HTML/CSS, and TypeScript. 
+                            With experience in C, Assembly, and frameworks like React.
                         </p>
-                        <p>With experience in C and Assembly.</p>
                     </div>
                 </div>
             </main>

@@ -8,7 +8,7 @@ function DisplayProjects() {
             </div>
             <div className="project-boxes">
                 <div className="medium-box">
-                <p>Project 1</p>
+                <p>React Front-End Website</p>
                 <p>Date:</p>
                 <p>Company: Dana-Farber</p>
                 </div>

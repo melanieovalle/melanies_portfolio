@@ -1,10 +1,5 @@
 // import React { useState }from 'react';
 import './App.css';
-// import profilePic from './assets/profile_pic.png';
-// import DisplayProjects from './components/projects';
-// import DisplayEducation from './components/education';
-// import DisplayExperience from './components/experience';
-// import DisplayContact from './components/contact';
 import WebsiteNavbar from './navbar/navbar';
 import { Routes, Route } from 'react-router-dom';
 import DisplayProjects from './components/projects';

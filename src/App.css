@@ -5,7 +5,6 @@
  padding: 0;
 }
 
-
 /* App Container */
 .App {
  display: flex;
@@ -21,14 +20,14 @@
 
 .page-wrapper {
   margin-top: 120px;
-  width: 100vw;
+  width: 75vw;
 }
 
 /* Main Container Styles */
 .main-container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
 }
 
@@ -53,15 +52,13 @@ h2 {
 
 
 h3 {
- font-family:Verdana, Geneva, Tahoma, sans-serif;
- font-size: large;
- font-weight:lighter;
- color:#332e2e;
- margin-bottom: 4px;
- max-width: 90%;
- line-height: 1.4;
-
-
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: large;
+font-weight:lighter;
+color:#332e2e;
+margin-bottom: 4px;
+max-width: 90%;
+line-height: 1.4;
 }
 
 
@@ -74,47 +71,42 @@ p {
 
 /* Header Styles */
 .header {
- display: flex;
- flex-direction: row;
- width: 90vw;
- justify-content: space-between;
- align-items: center;
- margin: 0 auto;
- padding: 2rem;
- box-sizing: border-box;
- /* height: 40px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  box-sizing: border-box;
+  gap: 5px;
 }
+
 .header-text {
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- padding-right: 2rem;
- width: 50%;
- box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 2rem;
+  width: 50%;
+  box-sizing: border-box;
 }
 .header-pic {
- width: 50%;
- display: flex;
- justify-content: center;
- align-items: center;
- box-sizing: border-box;
-
-
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 .header-pic img {
- width: 50vw;
- max-width: 350px;
- height: auto;
- object-fit: cover;
- border-radius: 50%;
- /* border: 2px solid #ccc; */
+  width: 50vw; 
+  max-width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
 }
-
 
 .header > * {
  margin-bottom: 10px;
 }
-
 
 /* Responsive based on screen size */
 /* @media (max-width: 768px) {
@@ -218,15 +210,15 @@ p {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- width: 100%;
- margin-top: 10px;
+ /* width: 80%; */
 }
 
 .project-boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+
+  gap: 10px;
 }
 
 

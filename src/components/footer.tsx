@@ -3,7 +3,7 @@ function Footer() {
     return(
         <div className='page-wrapper'>
             <div className='logon-footer'>
-                &copy; 2025 Melanie Ovalle
+                &copy; 2025 Melanie Ovalle. All Rights Reserved.
             </div>
         </div>
     )
