@@ -1,4 +1,5 @@
 import profilePic from '../assets/profile_pic.png';
+import DisplayContact from './contact';
 
 function DisplayHome() {
     return(
@@ -26,13 +27,11 @@ function DisplayHome() {
                             currently pursuing a double major in Computer
                             Science and Math at Bowdoin College.
                         </p>
-                        <br></br>
                         <p>
                             👩‍💻 : Growing up in a country with a significant digital
                             divide, I developed a deep passion for exploring
                             how technological education can transform societies.
                         </p>
-                        <br></br>
                         <p>
                             💻 : Proficient in Python, Java, JavaScript, HTML/CSS, and TypeScript. 
                             With experience in C, Assembly, and frameworks like React.
@@ -40,6 +39,8 @@ function DisplayHome() {
                     </div>
                 </div>
             </main>
+            <DisplayContact/>
+            
         </div>
 
     )

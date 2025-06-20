@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global reset */
 * {
  box-sizing: border-box;
@@ -57,7 +61,7 @@ font-size: large;
 font-weight:lighter;
 color:#332e2e;
 margin-bottom: 4px;
-max-width: 90%;
+/* max-width: 90%; */
 line-height: 1.4;
 }
 
@@ -66,6 +70,7 @@ p {
  color: #332e2e;
  font-family: 'Karla', sans-serif;
  font-size: large;
+ margin-bottom: 10px;
 }
 
 
@@ -107,29 +112,6 @@ p {
 .header > * {
  margin-bottom: 10px;
 }
-
-/* Responsive based on screen size */
-/* @media (max-width: 768px) {
- .header {
-   flex-direction: column;
-   align-items: center;
- }
-
-
- .header-text,
- .header-pic {
-   width: 100%;
-   text-align: center;
- }
-
-
- .header-pic img {
-   width: 40vw;
-   max-width: 150px;
- }
-} */
-
-
 
 
 /* Layout Styles */
@@ -189,11 +171,17 @@ p {
   margin-top:10px;
 }
 
-
-
-/* .medium-box > * {
- margin-bottom: 8px;
-} */
+.box-title {
+  display: block;
+  width:100%;
+  text-align: center;
+  border-bottom: 1px solid #332e2e;
+  margin: 10px 0;
+  padding-bottom: 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(1rem, 2.5vw, 3.8vh);
+  font-weight: bold;
+}
 
 
 /* Project Section Styles */
@@ -210,15 +198,32 @@ p {
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- /* width: 80%; */
+ /* width: 100%; */
 }
 
 .project-boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 20px;
+}
 
-  gap: 10px;
+.project-boxes img {
+  width: 100%;
+  height: auto;
+  display: block; 
+  margin: 0 auto;
+}
+
+.project-boxes ul {
+  /* display: block;
+  margin: 0 auto; */
+  padding-left: 10%;
+}
+
+.company-logo img {
+  /* width: !important 20px; */
+  height: auto;
 }
 
 
@@ -246,6 +251,14 @@ p {
  flex-direction: column;
  justify-content: space-between;
  width: 100%;
+}
+
+/* Styles for Unordered Lists */
+ul {
+  list-style-type: circle;
+  color: #332e2e;
+  font-family: 'Karla', sans-serif;
+  font-size: large;
 }
 
 /* Footer Styles */
