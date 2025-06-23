@@ -185,7 +185,7 @@ p {
   margin: 10px 0;
   padding-bottom: 4px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: clamp(1rem, 2.5vw, 3.8vh);
+  font-size: clamp(1rem, 2.4vw, 2.6vh);
   font-weight: bold;
 }
 
@@ -231,7 +231,7 @@ p {
 .project-boxes ul {
   /* display: block;
   margin: 0 auto; */
-  padding-left: 10%;
+  /* padding-left: 10%; */
 }
 
 .company-logo img {
@@ -272,6 +272,7 @@ ul {
   color: #332e2e;
   font-family: 'Karla', sans-serif;
   font-size: large;
+  padding-left: 10%;
 }
 
 /* Footer Styles */
