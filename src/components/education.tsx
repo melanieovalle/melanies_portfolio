@@ -1,5 +1,5 @@
 import {IoLocationOutline} from "react-icons/io5";
-import bowdoinImg from '../assets/bowdoin.jpg';
+// import bowdoinImg from '../assets/bowdoin.jpg';
 
 function DisplayEducation() {
     return(

@@ -353,3 +353,60 @@ ul {
 }
 
 
+/* Bot Check Styles */
+.bot-check-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(244, 226, 220, 0.95);
+  z-index: 9999;
+}
+
+.bot-check-modal {
+  background-color: #fff7f3;
+  border: 1px solid #d4b4a8;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 40px 10px #d4b4a8;
+  animation: fadeInScale 0.3s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bot-check-modal button {
+  display: flex;
+  flex-direction: center;
+  justify-self: center;
+  background-color: #d4b4a8;
+  color: white;
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.bot-check-modal button:hover {
+  background-color: #c09c8d;
+}
+
+

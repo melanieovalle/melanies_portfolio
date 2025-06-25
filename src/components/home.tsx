@@ -1,7 +1,11 @@
 import profilePic from '../assets/profile_pic.png';
 import DisplayContact from './contact';
+import GetBotCheckNums from './botCheck';
+import {useState} from 'react';
 
 function DisplayHome() {
+    const [botCheckPassed, setBotCheckPassed] = useState(false);
+
     return(
         <div className='page-wrapper'>
             <header className="header">
@@ -40,6 +44,18 @@ function DisplayHome() {
                 </div>
             </main>
             <DisplayContact/>
+
+
+            {/* Bot check */}
+            <div className="">
+                <h2>Bot Check</h2>
+                <p>First, let&apos;s check if you&apos;re human.</p>
+                
+                <GetBotCheckNums 
+                setBotCheckPassed={setBotCheckPassed}
+                />
+                <br></br>
+            </div>
             
         </div>
 
