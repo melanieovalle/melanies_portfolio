@@ -6,7 +6,7 @@ function Footer() {
             <div className='logon-footer'>
                 &copy; 2025 Melanie Ovalle.
                 <br/>
-                <span className='flex gap-4'>
+                <span className='flex'>
                     <p>
                         📫 : <a
                             href="mailto:melanieovalle008@gmail.com?subject=Let's%20Connect&body=Hi%20Melanie%2C%0A%0AI%20wanted%20to%20reach%20out%20and..."
@@ -22,14 +22,15 @@ function Footer() {
                             href="https://www.linkedin.com/in/melanie-ovalle-a25609310/"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-500 underline"
+                            className="underline"
                         >
                             LinkedIn
                         </a>
                     </p>
                 </span>
+                
             </div>
-            
+
         </div>
     )
 }

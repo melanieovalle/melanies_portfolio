@@ -42,11 +42,11 @@ function DisplayHome() {
                     </div>
                 </div>
             </main>
-            {/* <div className='home-updates-container'> */}
+            <div className='home-updates-container'>
                 <DisplayContact/>
                 {/* <img src={bowdoinImg} alt="Bowdoin College Picture" style={{cursor: 'pointer', width: 'clamp(100px, 200px, 400px)'}} /> */}
                 {/* <DisplayBlogPreview/> */}
-            {/* </div> */}
+            </div>
             
         </div>
 
