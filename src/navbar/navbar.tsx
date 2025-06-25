@@ -35,6 +35,11 @@ function WebsiteNavbar() {
         }
     }, [botCheckPassed, pendingRoute, navigate]);
 
+    useEffect(() => {
+        console.log('SHOW BOT CHECK?', showBotCheck);
+    }, [showBotCheck]);
+
+
     return (
         <nav className= 'navbar'>
             <div className= 'navbar-logo'>
@@ -72,12 +77,6 @@ function WebsiteNavbar() {
                         onClick={(e) => handleProtectedNavClick(e, "/blog")}
                         className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                         Blog
-                    </NavLink>
-                    <NavLink to="/contact" 
-                        // onClick={() => setNavToggle(false)}
-                        onClick={(e) => handleProtectedNavClick(e, "/contact")}
-                        className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                        Contact
                     </NavLink>
                 </div>
 

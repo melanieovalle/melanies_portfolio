@@ -1,10 +1,9 @@
 import profilePic from '../assets/profile_pic.png';
 import DisplayContact from './contact';
-import GetBotCheckNums from './botCheck';
-import {useState} from 'react';
+// import { DisplayBlogPreview } from './blog';
+import bowdoinImg from '../assets/bowdoin.jpg';
 
 function DisplayHome() {
-    const [botCheckPassed, setBotCheckPassed] = useState(false);
 
     return(
         <div className='page-wrapper'>
@@ -43,19 +42,11 @@ function DisplayHome() {
                     </div>
                 </div>
             </main>
-            <DisplayContact/>
-
-
-            {/* Bot check */}
-            <div className="">
-                <h2>Bot Check</h2>
-                <p>First, let&apos;s check if you&apos;re human.</p>
-                
-                <GetBotCheckNums 
-                setBotCheckPassed={setBotCheckPassed}
-                />
-                <br></br>
-            </div>
+            {/* <div className='home-updates-container'> */}
+                <DisplayContact/>
+                {/* <img src={bowdoinImg} alt="Bowdoin College Picture" style={{cursor: 'pointer', width: 'clamp(100px, 200px, 400px)'}} /> */}
+                {/* <DisplayBlogPreview/> */}
+            {/* </div> */}
             
         </div>
 
